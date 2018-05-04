@@ -1,8 +1,8 @@
 FROM ruby:2.4-alpine
 MAINTAINER tyage <namatyage@gmail.com>
 
-ARG REPOSITORY="https://github.com/tyage/slack-patron.git"
-ARG BRANCH="master"
+ARG REPOSITORY="https://github.com/evidex/slack-patron.git"
+ARG BRANCH="test"
 ARG SRCDIR="/usr/local/slack-patron"
 
 RUN set -x && \
