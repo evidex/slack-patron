@@ -23,5 +23,3 @@ COPY ./config.yml ${SRCDIR}/config.yml
 WORKDIR ${SRCDIR}
 
 CMD bundle exec rackup viewer/config.ru -o 0.0.0.0 -p 9292
-
-EXPOSE 9292
