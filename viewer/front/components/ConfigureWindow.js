@@ -12,7 +12,7 @@ class ConfigureWindow extends React.Component {
     this.refs.backupFile.value = '';
   }
   render() {
-    domain = (this.props.teamInfo ? this.props.teamInfo.domain : '')
+    var domain = (this.props.teamInfo ? this.props.teamInfo.domain : '')
     return (
       <div>
         <div className="configure-window">

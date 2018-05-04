@@ -15,7 +15,7 @@ class SidebarHeader extends React.Component {
     });
   }
   render() {
-    teamName = (this.props.teamInfo ? this.props.teamInfo.name : '')
+    var teamName = (this.props.teamInfo ? this.props.teamInfo.name : '')
     return (
       <div>
         <div className="sidebar-header">
