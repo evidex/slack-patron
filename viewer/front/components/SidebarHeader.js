@@ -15,11 +15,12 @@ class SidebarHeader extends React.Component {
     });
   }
   render() {
+    teamName = (this.props.teamInfo ? this.props.teamInfo.name : '')
     return (
       <div>
         <div className="sidebar-header">
           <div className="team-info" onClick={this.toggleConfigureWindow.bind(this)}>
-            <span className="team-name">{this.props.teamInfo.name}</span>
+            <span className="team-name">{teamName}</span>
             <p className="configure-toggler"></p>
           </div>
         </div>

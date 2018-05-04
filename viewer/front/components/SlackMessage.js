@@ -52,7 +52,8 @@ export default class extends Component {
   }
   originalMessageLink(teamInfo, message) {
     const messageId = message.ts.replace('.', '');
-    return `https://${teamInfo.domain}.slack.com/messages/${message.channel}/p${messageId}`;
+    const domain = (teamInfo ? teamInfo.domain : '');
+    return `https://${domain}.slack.com/messages/${message.channel}/p${messageId}`;
   }
   render() {
     const createMarkup = (text) => {
