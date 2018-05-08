@@ -4,3 +4,4 @@ config.yml
 /tmp
 /logs
 /pids
+mongo-backup.tgz
